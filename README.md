@@ -1,4 +1,4 @@
-# Single-Post-Meta-Description
+# Single Post Meta Description
 <h3> The easiest way to add in every post a different meta description tag in html head </h3>
 <ul>
   <li>Contributors: <a href="https://profiles.wordpress.org/viarete/">Fabio Giacomini</a></li>
