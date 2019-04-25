@@ -30,5 +30,5 @@ If you do not provide neither a default meta tag description nor a post meta tag
 <li>Upload the single-post-meta-description directory to your wp-content/plugins directory</li>
 <li>Activate the plugin on the WordPress Plugins Dashboard</li>
 </ul>
-<h3>License</h3>
+<h2>License</h2>
 <p>See<a href="https://www.gnu.org/licenses/gpl-2.0.html"> License</a></p>
