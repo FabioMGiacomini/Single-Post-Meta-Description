@@ -23,7 +23,7 @@ If you do not provide neither a default meta tag description nor a post meta tag
 
 1. Upload the plugin files to the `/wp-content/plugins/single-post-meta-description` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
-1. Use the Settings->single-post-meta-description screen to configure the plugin
+1. Use the Single Post Meta Description settings page to configure the plugin
 
 
 == Frequently Asked Questions ==
