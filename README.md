@@ -17,20 +17,11 @@ The main options page of the plugin, provides you with a default text area, wher
 If you do not provide neither a default meta tag description nor a post meta tag  description, the post's excerpt will appear in the html meta tag.
 </p>
 <h2>Installation</h2>
-<h3>Using The WordPress Dashboard</h3>
 <ul>
-<li>Navigate to the 'Add New' Plugin Dashboard</li>
-<li>Select single-post-meta-description.zip from your computer</li>
-<li>Upload</li>
-<li>Activate the plugin on the WordPress Plugin Dashboard</li>
-  <li>Use the Settings->single-post-meta-description screen to configure the plugin</li>  
-</ul>
-<h3>Using FTP</h3>
-<ul>
-<li>Extract single-post-meta-description.zip to your computer</li>
-<li>Upload the single-post-meta-description directory to your wp-content/plugins directory</li>
-<li>Activate the plugin on the WordPress Plugins Dashboard</li>
-    <li>Use the Settings->single-post-meta-description screen to configure the plugin</li>  
+<li>Upload the 'single-post-meta-description' folder to your wp-content/plugins directory</li>
+<li>Activate the plugin through the 'Plugins' menu in WordPress</li>
+    <li>Use the Settings->single-post-meta-description screen to configure the plugin</li> 
+  <li>Edit a post and add text to the custom meta box</li>
 </ul>
 <h2>Screenshots </h2>
 <li> The admin option page (screenshot-1.png)</li>
