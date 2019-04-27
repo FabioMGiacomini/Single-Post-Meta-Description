@@ -20,7 +20,7 @@ If you do not provide neither a default meta tag description nor a post meta tag
 <ul>
 <li>Upload the 'single-post-meta-description' folder to your wp-content/plugins directory</li>
 <li>Activate the plugin through the 'Plugins' menu in WordPress</li>
-    <li>Use the Settings->single-post-meta-description screen to configure the plugin</li> 
+    <li>Use the Single Post Meta Description settings page to configure the plugin</li> 
   <li>Edit a post and add text to the custom meta box</li>
 </ul>
 <h2>Screenshots </h2>
