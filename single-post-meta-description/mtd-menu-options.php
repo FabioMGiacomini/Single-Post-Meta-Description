@@ -45,7 +45,7 @@ function viarete_mtd_menu(){
 
 
 // form nel backend chiamato da add menu page
-function viarete_mtd_options_page( $active_tab = '' ){
+function viarete_mtd_options_page(){
 ?>
 
 <img src="<?php echo plugins_url('/images/viarete.png', __FILE__) ?>" width='150'>

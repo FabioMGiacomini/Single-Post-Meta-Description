@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Single Post Meta Description
  * Plugin Uri: https://github.com/FabioMGiacomini/Single-Post-Meta-Description
- * Description: Crea un campo custom nei post, dove inserire la descrizione della pagina che apparirà nel tag html <code>meta name="description"</code> Aiuta a migliorare i risultati su Google, la descrizione appare nella SERP. 
+ * Description: Crea un campo custom nei post, dove inserire la descrizione della pagina che apparirà nel tag html <code>meta name="description"</code> Aiuta a migliorare i risultati su Google, la descrizione appare nella SERP.
  * Version: 1.0.0
  * Author: Fabio Giacomini
  * Author Uri: <a href="https://github.com/FabioMGiacomini" target=_blank"">Fabio Giacomini</a>
@@ -46,9 +46,9 @@ function mtd_default_description(){
   if ( is_singular() && $article_descr ) {
             echo $article_descr;
         } elseif ( $options['mtd_main_description'] ){
-      echo sanitize_text_field( $options['mtd_main_description'] );
+      echo sanitize_textarea_field( $options['mtd_main_description'] );
     } else {
-          set_meta_description();
+          echo " ";
         }
 }
 

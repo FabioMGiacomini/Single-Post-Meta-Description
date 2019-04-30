@@ -37,7 +37,7 @@ function mtd_get_current_desc() {
        } elseif ( $options['mtd_main_description'] ){
          echo sanitize_text_field( $options['mtd_main_description'] );
        } else {
-        set_meta_description();
+        echo " ";
        }
 
        die();

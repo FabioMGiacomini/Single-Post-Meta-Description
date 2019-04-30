@@ -49,7 +49,7 @@ function mtd_meta_box_add(){
     }
 
     if (isset( $_POST['mtd_description_field'] ) ) {
-      update_post_meta( $post_id, 'mtd_description_field', esc_attr( $_POST['mtd_description_field'] ) );
+      update_post_meta( $post_id, 'mtd_description_field', sanitize_text_field( $_POST['mtd_description_field'] ) );
     }
 }
 
