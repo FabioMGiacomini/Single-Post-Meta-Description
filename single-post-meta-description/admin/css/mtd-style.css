@@ -1,0 +1,22 @@
+/*
+* Foglio di stile per il plugin Viarete Meta Tag Description
+*
+*
+*/
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 15px;
+}
+div.mtd_wrap {
+  background-color: #CFD8DC;
+  padding: 20px;
+}
+
+div.mtd_wrap p{
+  width: 80%;
+  font-size: 16px;
+}
