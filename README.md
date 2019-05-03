@@ -1,5 +1,5 @@
 # Single Post Meta Description
-<h3> The easiest way to add for every post a different meta description tag in html head </h3>
+<h3> The easiest way to add a different content inside the meta description html tag, for every post </h3>
 <ul>
   <li><b>Contributors:</b> FabioMGiacomini</li>
 <li><b>Tested up to:</b> 5.1</li>
