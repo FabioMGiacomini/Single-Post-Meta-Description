@@ -36,7 +36,7 @@ function single_post_meta_description_menu_page(){
     'Pagina Opzioni Aggiuntive', // titolo pagina
     'About', // voce menu
     'manage_options', // capability
-    'credits_opzioni ', // identificatore del submenu
+    'credits_opzioni', // identificatore del submenu
     'single_post_meta_description_credits_page', // optional - callback
     '' // optional url dell'icona
   );
@@ -46,9 +46,10 @@ function single_post_meta_description_menu_page(){
 
 // form nel backend chiamato da add menu page
 function single_post_meta_description_options_page(){
+  $logourl = plugins_url( 'admin/images/viarete.png', dirname( __FILE__) );
 ?>
 
-<img src="<?php echo plugins_url('admin/images/viarete.png', dirname(__FILE__) ) ?>" width='150'>
+<img src="<?php echo esc_url( $logourl ); ?>" width='150'>
       <div class="mtd_wrap">
       <h1>Single Post Meta Description</h1>
       <hr>
@@ -110,7 +111,7 @@ function viarete_mtd_sanitize_opzioni($input){
         if ( isset( $input[key] ) ) {
           // strip_tags function is native to PHP, for removing all HTML and PHP tags
           // stripslashes function is native PHP function, which will properly handle quotation marks around a string.
-          $output[key] = strip_tags(stripslashes($input[key]));
+          $output[key] = sanitize_textarea_field( stripslashes( $input[key] ) );
         }
       } // end foreach
       return apply_filters('viarete_mtd_sanitize_opzioni', $output, $input);
@@ -129,8 +130,8 @@ function viarete_mtd_sanitize_opzioni($input){
     $options = get_option( 'viarete_mtd_gruppo_opzioni' );
 
    // the ID and the name attribute of the element should match that of the ID in the call to add_settings_field
-    echo '<textarea name="viarete_mtd_gruppo_opzioni[mtd_main_description]" id="mtd_main_description" rows="5" cols="50"/>' . $options['mtd_main_description'] . '</textarea><br/>';
-    echo'<label>Si consigliano al massimo 160 caratteri</label>';
+    echo '<textarea name="viarete_mtd_gruppo_opzioni[mtd_main_description]" id="mtd_main_description" rows="5" cols="50" maxlength="160"/>' . sanitize_textarea_field( $options['mtd_main_description'] ) . '</textarea><br/>';
+    echo'<label>Sono permessi al massimo 160 caratteri</label>';
 
  } // fine descrizione form
 
@@ -142,12 +143,18 @@ function viarete_mtd_sanitize_opzioni($input){
 
 
 function single_post_meta_description_credits_page(){
-  echo "<img src=" .  plugins_url('admin/images/viarete.png', dirname( __FILE__) ) . " width='150'>";
+  $viaretecontatto = 'https://viarete.it/#contatto';
+  $viaretemail = 'mailto://info@viarete.it';
+  $FGGithub = 'https://github.com/FabioMGiacomini';
+  $Facebook = 'https://www.facebook.com/siti.ecommerce.roma/';
+  $logourl = plugins_url( 'admin/images/viarete.png', dirname( __FILE__) );
+
+  echo "<img src=" . esc_url( $logourl ) . " width='150'>";
   echo "<h1>Single Post Meta Description</h1>";
   echo "<hr>";
-  echo "<h4>Sviluppato da <a href='https://github.com/FabioMGiacomini' target='_blank'>Fabio Giacomini</a></h4>";
-  echo "<h4>Se hai bisogno di aiuto mandaci una <a href='mailto:info@viarete.it' target='_blank'>mail</a> oppure scrivici tramite il form di <a href='https://viarete.it/#contatto' target='_blank'>contatto</a></h4>";
-  echo "<h5><a href='https://www.facebook.com/siti.ecommerce.roma/' target='_blank'>Facebook</a></h5>";
+  echo "<h4>Sviluppato da <a href='" . esc_url( $FGGithub ) . "' target='_blank'>Fabio Giacomini</a></h4>";
+  echo "<h4>Se hai bisogno di aiuto mandaci una <a href='" . esc_url( $viaretemail ) . "' target='_blank'>mail</a> oppure scrivici tramite il form di <a href='" . esc_url( $viaretecontatto ) . "' target='_blank'>contatto</a></h4>";
+  echo "<h5><a href='" . esc_url( $Facebook ) . "' target='_blank'>Facebook</a></h5>";
 }
 
  ?>

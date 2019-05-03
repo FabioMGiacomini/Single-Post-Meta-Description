@@ -22,12 +22,12 @@ function single_post_meta_description_meta_box_add(){
   function single_post_meta_description_meta_box_cback(){
       global $post;
       $values = get_post_custom( $post->ID );
-      $text = isset( $values['mtd_description_field'] ) ? esc_attr( $values['mtd_description_field'][0] ) : '' ;
+      $text = isset( $values['mtd_description_field'] ) ?  sanitize_text_field( $values['mtd_description_field'][0] ) : '' ;
 
       wp_nonce_field( 'mtd_nonce_action', 'meta_box_nonce_name' );
 ?>
       <label for="mtd_description_field">Descrizione</label>
-      <input type="text" name="mtd_description_field" id="mtd_description_field" value="<?php echo $text; ?>" />
+      <input type="text" name="mtd_description_field" id="mtd_description_field" value="<?php echo esc_attr( $text ); ?>" maxlength="160"/>
 
   <?php    }
 
@@ -55,7 +55,7 @@ function single_post_meta_description_meta_box_add(){
 
 function show_mtd_post_description(){
   if (isset( $_POST['mtd_description_field'] ) ) {
-        echo get_post_meta(get_the_ID(), 'mtd_description_field', true);
+        echo sanitize_text_field( get_post_meta( get_the_ID(), 'mtd_description_field', true ) );
     }
   }
 ?>

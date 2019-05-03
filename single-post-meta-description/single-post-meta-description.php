@@ -61,11 +61,11 @@ function single_post_meta_default_description(){
   $article_descr = get_post_meta(get_the_ID(), 'mtd_description_field', true);
 
   if ( is_singular() && $article_descr ) {
-            echo $article_descr;
+            echo sanitize_text_field( $article_descr );
         } elseif ( $options['mtd_main_description'] ){
       echo sanitize_text_field( $options['mtd_main_description'] );
     } else {
-          set_meta_description();
+          echo " ";
         }
       }
 }

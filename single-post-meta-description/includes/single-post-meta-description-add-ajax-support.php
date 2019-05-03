@@ -28,16 +28,16 @@ add_action( 'wp_ajax_nopriv_get_single_post_meta_description', 'single_post_meta
 
 function single_post_meta_description_get_current_text() {
    if ( ! wp_verify_nonce( $_REQUEST['_nonce'], 'add-post-rating-nonce' ) )
-        die ( 'Non autorizzato!');
+        die ( 'Non autorizzato!' );
 
-     $mypostid = $_REQUEST['mypid'];
+     $mypostid = intval( $_POST['mypid'] );
      // questo è l'ID del post, vedi sopra e script.js
 
       $options = get_option( 'viarete_mtd_gruppo_opzioni' );
       $article_descr = get_post_meta($mypostid, 'mtd_description_field', true);
 
       if ($article_descr) {
-        echo $article_descr;
+        echo sanitize_text_field($article_descr);
        } elseif ( $options['mtd_main_description'] ){
          echo sanitize_text_field( $options['mtd_main_description'] );
        } else {
