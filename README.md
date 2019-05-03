@@ -1,4 +1,5 @@
 # Single Post Meta Description
+<h4>WordPress Plugin</h4>
 <h3> The easiest way to add a different content inside the meta description html tag, for every post </h3>
 <ul>
   <li><b>Contributors:</b> FabioMGiacomini</li>
