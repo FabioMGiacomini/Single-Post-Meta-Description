@@ -11,7 +11,7 @@
 </ul>
 <hr>
 <h2>Description</h2>
-<p>This plugin adds a new field (labeled Single Post Meta Description) for every post, where you can write a text that will be inserted in the related meta tag, located in the head section.
+<p>This plugin adds a new field (labeled Single Post Meta Description) at the bottom of the post page, where you can write a text that will be inserted in the related meta tag, located in the head section.
 
 The main options page of the plugin, provides you with a default text area, where you can insert a default description that will appear in case the field in post page is empty.
 
