@@ -8,6 +8,7 @@
  * @link https://github.com/FabioMGiacomini/Single-Post-Meta-Description
  * @version 1.0.0
  */
+
 /**
  * Plugin Name: Single Post Meta Description
  * Plugin Uri: https://github.com/FabioMGiacomini/Single-Post-Meta-Description
@@ -37,37 +38,17 @@
  */
 
 
-defined( 'ABSPATH' ) or die( 'Accesso diretto negato' );
+defined( 'ABSPATH' ) || die( 'Accesso diretto negato' );
 
 define( 'SINGLE_POST_META_DESCRIPTION_VERSION', '1.0.0' );
 define( 'SINGLE_POST_META_DESCRIPTION_DIR', plugin_dir_path( __FILE__ ) );
 
 
-// menu opzioni nel backend dove viene scritta la descrizione di default
-include ( SINGLE_POST_META_DESCRIPTION_DIR . 'includes/single-post-meta-description-menu-options.php' );
+// menu opzioni nel backend dove viene scritta la descrizione di default.
+require SINGLE_POST_META_DESCRIPTION_DIR . 'includes/single-post-meta-description-menu-options.php';
 
-// metabox presente in ogni articolo che sovrascrive la descrizione di default
-include ( SINGLE_POST_META_DESCRIPTION_DIR . 'includes/single-post-meta-description-meta-box.php' );
+// metabox presente in ogni articolo che sovrascrive la descrizione di default.
+require SINGLE_POST_META_DESCRIPTION_DIR . 'includes/single-post-meta-description-meta-box.php';
 
-// inclusione ajax php
-include ( SINGLE_POST_META_DESCRIPTION_DIR . 'includes/single-post-meta-description-add-ajax-support.php' );
-
-
-// mostro la descrizione di default se presente nel meta tag description
-if ( !function_exists( 'single_post_meta_default_description' ) ){
-function single_post_meta_default_description(){
-
-  $options = get_option( 'viarete_mtd_gruppo_opzioni' );
-  $article_descr = get_post_meta(get_the_ID(), 'mtd_description_field', true);
-
-  if ( is_singular() && $article_descr ) {
-            echo sanitize_text_field( $article_descr );
-        } elseif ( $options['mtd_main_description'] ){
-      echo sanitize_text_field( $options['mtd_main_description'] );
-    } else {
-          echo " ";
-        }
-      }
-}
-
- ?>
+// inclusione ajax php.
+require SINGLE_POST_META_DESCRIPTION_DIR . 'includes/single-post-meta-description-add-ajax-support.php';

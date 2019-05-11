@@ -1,4 +1,4 @@
-// mtd plugin
+// Single_Post_Meta_Description script
 
 jQuery(document).ready(function($){
     $( window ).on( "load", function() {
@@ -10,7 +10,6 @@ jQuery(document).ready(function($){
              action: 'get_single_post_meta_description',
              _nonce : single_post_meta_description_script.nonce,
              mypid: single_post_meta_description_script.omy
-
             },
             success:function(data) {
               $('meta[name="description"]').attr('content', data);
