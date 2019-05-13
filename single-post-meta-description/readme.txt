@@ -9,7 +9,7 @@ Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-The easiest way to add for every post a different meta description tag in html head.
+The easiest way to add in the post page, a personalized content inside the meta description html tag
 
 == Description ==
 This plugin adds a new field in every post, where you can write a text that will be inserted in the related meta tag, located in the head section.
