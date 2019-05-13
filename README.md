@@ -15,7 +15,6 @@
 
 The main options page of the plugin, provides you with a default text area, where you can insert a default description that will appear in case the field in post page is empty.
 
-If you do not provide neither a default meta tag description nor a post meta tag  description, the post's excerpt will appear in the html meta tag.
 </p>
 <h2>Installation</h2>
 <ul>
