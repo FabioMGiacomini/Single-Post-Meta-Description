@@ -166,7 +166,7 @@ function single_post_meta_description_credits_page() {
 	$facebook        = 'https://www.facebook.com/siti.ecommerce.roma/';
 	$logourl         = plugins_url( 'admin/images/viarete.png', dirname( __FILE__ ) );
 
-	echo '<img src=' . esc_url( $logourl ) . 'width="150">';
+	echo '<img src=' . esc_url( $logourl ) . ' width="150">';
 	echo '<h1>Single Post Meta Description</h1>';
 	echo '<hr>';
 	echo "<h4>Sviluppato da <a href='" . esc_url( $fggithub ) . "' target='_blank'>Fabio Giacomini</a></h4>";
