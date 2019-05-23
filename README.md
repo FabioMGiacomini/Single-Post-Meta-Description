@@ -27,5 +27,14 @@ The main options page of the plugin, provides you with a default text area, wher
 <li> The admin option page (screenshot-1.png)</li>
 <li> The post page where the SPMD field takes place (screenshot-2.png)</li>
 
+<h2> Frequently Asked Questions </h2>
+<ul>
+<li>Q. Where do I find the italian translation of the features of the plugin? </li>
+<li>A. If you need help go to <a href="https://viarete.it/single-post-meta-description/" target="_blank">this page</a></li>
+<hr/>
+<li>Q. How to get in touch with you for further informations or new plugins? </li>
+<li>A. Here you can subscribe to the <a href="https://viarete.it/single-post-meta-description/" target="_blank"> newsletter </a></li>
+</ul>
+
 <h2>License</h2>
 <p>See<a href="https://www.gnu.org/licenses/gpl-2.0.html"> License</a></p>
