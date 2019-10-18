@@ -3,7 +3,7 @@
 <h3> The easiest way to add in the post page, a personalized content inside the meta description html tag </h3>
 <ul>
   <li><b>Contributors:</b> FabioMGiacomini</li>
-<li><b>Tested up to:</b> 5.1</li>
+<li><b>Tested up to:</b> 5.2</li>
   <li><b>Stable tag:</b> 1.0.0</li>
 <li><b>License:</b> GPLv2 or later</li>
 
