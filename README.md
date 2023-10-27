@@ -23,9 +23,12 @@ The main options page of the plugin, provides you with a default text area, wher
     <li>Use the Single Post Meta Description settings page to configure the plugin</li> 
   <li>Edit a post and add text to the custom meta box</li>
 </ul>
+
+<!--
 <h2>Screenshots </h2>
 <li> The admin option page (screenshot-1.png)</li>
 <li> The post page where the SPMD field takes place (screenshot-2.png)</li>
+
 
 <h2> Frequently Asked Questions </h2>
 <ul>
@@ -35,6 +38,7 @@ The main options page of the plugin, provides you with a default text area, wher
 <li>Q. How to get in touch with you for further informations or new plugins? </li>
 <li>A. Here you can subscribe to the <a href="https://viarete.it/single-post-meta-description/" target="_blank"> newsletter </a></li>
 </ul>
+-->
 
 <h2>License</h2>
 <p>See<a href="https://www.gnu.org/licenses/gpl-2.0.html"> License</a></p>
